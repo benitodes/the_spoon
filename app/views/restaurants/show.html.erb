@@ -1,0 +1,7 @@
+<h1>Show page</h1>
+
+  <h2><%= @restaurant.name %></h2>
+  <p><%= @restaurant.address %></p>
+  <p><%= "$" * @restaurant.stars %></p>
+  <%= link_to "See the restaurants", restaurants_path %>
+  <%= link_to "Destroy", restaurant_path(@restaurant.id), method: :delete %>
